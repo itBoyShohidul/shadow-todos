@@ -1,0 +1,221 @@
+/* ================
+  Defaults
+================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+h1 {
+  font-size: 2.75rem;
+}
+h2 {
+  font-size: 2.25rem;
+}
+h3 {
+  font-size: 1.875rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1.125rem;
+}
+p {
+  font-size: 1rem;
+}
+
+/* Checkbox Styling */
+
+.checkbox {
+  color: var(--background);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.checktext {
+  margin-left: 20px;
+}
+#checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  outline: none;
+  background: var(--border);
+}
+/* ------------------- */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: var(--primary);
+  background-color: var(--background);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --primary: #ffffff;
+  --secondary: #707884;
+  --background: #04c582;
+  --foreground: #2e3137;
+  --border: #636b7b;
+}
+.btn-primary {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: var(--primary);
+  background-color: var(--background);
+}
+.btn-primary:hover {
+  cursor: pointer;
+}
+.btn-todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-todo > span {
+  padding: 0 5px;
+}
+.row {
+  display: flex;
+}
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
+.eye-holder {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.eye-holder input {
+  width: 100%;
+}
+.eye {
+  position: absolute;
+  right: 50px;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+/* ================
+    App
+================ */
+.app {
+  width: 60%;
+  min-height: 80vh;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: var(--foreground);
+}
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.signup-title {
+  text-align: center;
+}
+/* ================
+    Footer
+================ */
+footer {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10vh;
+  padding: 10px 0;
+  background-color: var(--foreground);
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
+/* ================
+    Responsive
+================ */
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 1.875rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.125rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  .row {
+    display: block;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  footer a {
+    font-size: 0.8rem;
+  }
+  .app {
+    width: 90%;
+  }
+  .eye {
+    right: 30px;
+    margin-top: 3px;
+    font-size: 1rem;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+  .btn-primary {
+    font-size: 0.8rem;
+  }
+  #checkbox {
+    height: 15px;
+    width: 15px;
+    outline: none;
+    font-size: 0.8rem;
+  }
+  .checktext {
+    font-size: 0.8rem;
+    margin-left: 10px;
+  }
+}

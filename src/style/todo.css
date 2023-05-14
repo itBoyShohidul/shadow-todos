@@ -1,0 +1,57 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #707884;
+  --background: #04c582;
+  --foreground: #2e3137;
+  --border: #636b7b;
+}
+
+.todo {
+  padding: 10px 20px;
+  margin: 15px auto;
+  border-radius: 5px;
+  background-color: var(--secondary);
+}
+.todo:hover {
+  cursor: pointer;
+}
+.todo-sec {
+  display: flex;
+}
+.todo-sec p {
+  width: 80%;
+}
+.todo-controls {
+  width: 20%;
+}
+.btn-todo {
+  border: none;
+  width: 80%;
+  border-radius: 10px;
+  margin: 5px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: var(--primary);
+  background-color: var(--background);
+}
+
+.btn-todo:hover {
+  transition: 0.3s;
+  background-color: #039763;
+  cursor: pointer;
+}
+.btn-todo-delete:hover {
+  background-color: tomato;
+  color: var(--foreground);
+}
+
+@media only screen and (max-width: 600px) {
+  .todo-sec {
+    flex-direction: column;
+  }
+  .todo-controls {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+}

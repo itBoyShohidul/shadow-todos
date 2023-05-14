@@ -1,0 +1,10 @@
+Background / Button : #04c582
+Foreground : #2e3137
+
+Primary Font : #ffffff
+Secondary font : #707884
+
+Input Background / Stroke / Border : #636b7b
+
+npm install axios react-router-dom react-icons
+

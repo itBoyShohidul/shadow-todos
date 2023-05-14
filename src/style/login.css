@@ -1,0 +1,109 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #707884;
+  --background: #04c582;
+  --foreground: #2e3137;
+  --border: #636b7b;
+}
+
+.login-container {
+  width: 40%;
+  min-height: 50vh;
+  margin: 15vh auto;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: var(--foreground);
+}
+.login-title {
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--primary);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+label {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  font-weight: bold;
+  padding: 10px 0;
+}
+input,
+textarea {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  color: var(--primary);
+  background-color: var(--border);
+}
+input::placeholder {
+  color: var(--foreground);
+}
+textarea::placeholder {
+  color: var(--foreground);
+}
+input,
+textarea:focus {
+  outline: none;
+}
+.password-show {
+  padding: 10px 0;
+}
+.password-show:hover {
+  cursor: pointer;
+}
+.forgot-password {
+  width: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 3px;
+  color: var(--border);
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.forgot-password:hover {
+  cursor: pointer;
+}
+.create-account-container {
+  padding: 20px 0;
+}
+.create-account {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 3px;
+  color: var(--primary);
+  text-align: center;
+}
+.login {
+  width: 50%;
+  margin: 20px auto;
+}
+/* ================
+    Responsive
+================ */
+@media only screen and (max-width: 600px) {
+  .login-container {
+    width: 80%;
+    margin: 20vh auto;
+  }
+  .login-title {
+    width: 80%;
+  }
+  form {
+    width: 100%;
+  }
+  label {
+    font-size: 0.6rem;
+  }
+  input,
+  textarea {
+    font-size: 0.8rem;
+  }
+}
